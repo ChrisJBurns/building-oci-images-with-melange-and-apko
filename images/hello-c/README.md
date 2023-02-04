@@ -49,7 +49,7 @@ An example:
 ...
 ```
 
-You will endup with a `packages/` folder with a bunch of subfolders that contains our program `apk` for each of the architectures.
+You will endup with a `packages/` folder with a bunch of subfolders that contains our program `apk` for each of the architectures. Cool!
 
 ### Building the OCI Image
 
@@ -90,9 +90,13 @@ There we go! Our very own C program OCI image built by `akpo`, with the `apk` pa
 
 ## Further Note
 
-If you have a detailed, eye, you will have noticed that there where two other files created after tha `apko` build step:
+If you have a detailed eye, you will have noticed that there where two other files created after tha `apko` build step:
 
-`sbom-*.cdx` - this is the [CycloneDX](https://cyclonedx.org/) SBOM of our OCI Image
-`sbom-*.spdx.json` this is the [SPDX](https://spdx.dev/) SBOM of our OCI Image
+- `sbom-*.cdx` - this is the [CycloneDX](https://cyclonedx.org/) SBOM of our OCI Image
+- `sbom-*.spdx.json` this is the [SPDX](https://spdx.dev/) SBOM of our OCI Image
 
 These files contain information about all of the dependencies and packages that make up the OCI image (including our `hello` `apk` - go have a look for it). This is an incredible powerful feature because this allows you to further look deeper into your images to see what nasties exist if another log4shell was to ever happen.
+
+## Conclusion
+
+Hope you enjoyed!
